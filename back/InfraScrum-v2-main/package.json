@@ -1,0 +1,43 @@
+{
+  "name": "react-base",
+  "version": "0.0.0",
+  "scripts": {
+    "start:front": "vite",
+    "start:back": "json-server --watch data/db.json -p 8000",
+    "start:all": "pnpm run-p start:back start:front",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" "
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "csstype": "^3.0.10",
+    "formik": "^2.2.9",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.3.0",
+    "react-query": "^3.39.1",
+    "react-router-dom": "6",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@vitejs/plugin-react": "^1.0.7",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.15",
+    "vite": "^2.7.2"
+  }
+}

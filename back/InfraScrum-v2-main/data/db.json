@@ -1,0 +1,371 @@
+{
+  "entreprise": [
+    {
+      "id": 1,
+      "nom": "Cora",
+      "img": "https://xn--dpliants-b1a.be/wp-content/uploads/2017/01/Cora-1.png"
+    },
+    {
+      "id": 2,
+      "nom": "Croix rouge",
+      "img": "https://www.croix-rouge.be/content/themes/redcross/dist/images/logo-crb.svg"
+    },
+    {
+      "id": 3,
+      "nom": "Proximus",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_Proximus_2019.png"
+    },
+    {
+      "id": 4,
+      "nom": "Riot",
+      "img": "https://play-lh.googleusercontent.com/O8HAFLUyNuaUtyHGbcxUTwfjgsWXUquT2mv75tT4hYUkyfRjEokKyY6Uq4FYw2DYFJY"
+    }
+  ],
+  "projet": [
+    {
+      "id": 1,
+      "nom": "Mise à jour du site web",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 1,
+      "entreprise_id": 1
+    },
+    {
+      "id": 2,
+      "nom": "Mise à jour  du backend",
+      "description": "Amélioration de la base de donnée des utilisateurs",
+      "status_id": 2,
+      "entreprise_id": 1
+    },
+    {
+      "id": 3,
+      "nom": "UX/UI",
+      "description": "Experience utilisateur et design",
+      "status_id": 3,
+      "entreprise_id": 1
+    },
+    {
+      "id": 4,
+      "nom": "Mise à jour du site web",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 1,
+      "entreprise_id": 2
+    },
+    {
+      "id": 5,
+      "nom": "UX/UI",
+      "description": "Experience utilisateur et design",
+      "status_id": 2,
+      "entreprise_id": 2
+    },
+    {
+      "id": 6,
+      "nom": "Application Redcross",
+      "description": "Création d'une application unique pour la croix rouge",
+      "status_id": 3,
+      "entreprise_id": 2
+    },
+    {
+      "id": 7,
+      "nom": "Mise à jour du site web",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 1,
+      "entreprise_id": 3
+    },
+    {
+      "id": 8,
+      "nom": "Mise à jour Application",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 4,
+      "entreprise_id": 3
+    },
+    {
+      "id": 9,
+      "nom": "UX/UI",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 4,
+      "entreprise_id": 3
+    },
+    {
+      "id": 10,
+      "nom": "Mise à jour du site web",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 1,
+      "entreprise_id": 4
+    },
+    {
+      "id": 11,
+      "nom": "Mise à jour de l'application",
+      "description": "Ajout d'élement pour l'application",
+      "status_id": 2,
+      "entreprise_id": 4
+    },
+    {
+      "id": 12,
+      "nom": "E-Shop",
+      "description": "Amélioration de l'ergonomie et du visuel de l'e-shop",
+      "status_id": 2,
+      "entreprise_id": 4
+    },
+    {
+      "id": 13,
+      "nom": "UX/UI",
+      "description": "Amélioration de l'ergonomie et du visuel",
+      "status_id": 2,
+      "entreprise_id": 4
+    }
+  ],
+  "tache": [
+    {
+      "id": 1,
+      "nom": "création du header",
+      "description": "créer un header avec 3 lien et le logo qui vous renvoie vers la page d'acceuil",
+      "temps": "10 heures",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 1,
+      "user_id": [1]
+    },
+    {
+      "id": 2,
+      "nom": "création d'une nav bar",
+      "description": "création d'une nav bar avec un menu déroulant",
+      "temps": "3 heures",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 1,
+      "user_id": [1]
+    },
+    {
+      "id": 3,
+      "nom": "création d'une page login",
+      "description": "créer une page login",
+      "temps": "1 heure",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 1,
+      "documents": [],
+      "projet_id": 1,
+      "user_id": [1, 2]
+    },
+    {
+      "id": 4,
+      "nom": "création d'un background dynamique",
+      "description": "créer un background dynamique qui intéragit avec la souris",
+      "temps": "1 heure",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 1,
+      "documents": [],
+      "projet_id": 1,
+      "user_id": [1, 2]
+    },
+    {
+      "id": 5,
+      "nom": "Mise à jour données des utilisateurs",
+      "description": "Mise à jour des données liées à l'utilisateur",
+      "temps": "1 heure",
+      "dateDebut": 20220418,
+      "dateFin": 20220518,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 2,
+      "user_id": [4, 5]
+    },
+    {
+      "id": 6,
+      "nom": "Mise à jour des fonctionnalités Admin",
+      "description": "créer de nouvelles routes pour le rôle administrateurs",
+      "temps": "1 heure",
+      "dateDebut": 20220418,
+      "dateFin": 20220518,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 2,
+      "user_id": [4, 5]
+    },
+    {
+      "id": 7,
+      "nom": "créer une  messagerie",
+      "description": "Etablir un proxy de messagerie",
+      "temps": "10 heures",
+      "dateDebut": 20220418,
+      "dateFin": 20220518,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 2,
+      "user_id": [4, 5]
+    },
+    {
+      "id": 8,
+      "nom": "création du header",
+      "description": "créer un header avec 3 lien et le logo qui vous renvoie vers la page d'acceuil",
+      "temps": "3 heures",
+      "dateDebut": 20220606,
+      "dateFin": 20221212,
+      "status_id": 3,
+      "documents": [],
+      "projet_id": 3,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 9,
+      "nom": "A/B testing",
+      "description": "création de plusieurs variantes du projets",
+      "temps": "3 heures",
+      "dateDebut": 20220606,
+      "dateFin": 20221212,
+      "status_id": 3,
+      "documents": [],
+      "projet_id": 3,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 10,
+      "nom": "UI design",
+      "description": "Amélioration du design",
+      "temps": "3 heures",
+      "dateDebut": 20220606,
+      "dateFin": 20221212,
+      "status_id": 3,
+      "documents": [],
+      "projet_id": 3,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 11,
+      "nom": "UX",
+      "description": "Amélioration expérience utilisateurs",
+      "temps": "10 heures",
+      "dateDebut": 20220612,
+      "dateFin": 20220710,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 3,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 12,
+      "nom": "création du header",
+      "description": "créer un header avec 3 lien et le logo qui vous renvoie vers la page d'acceuil",
+      "temps": "1 heure",
+      "dateDebut": 20220612,
+      "dateFin": 20220710,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 4,
+      "user_id": [3]
+    },
+    {
+      "id": 13,
+      "nom": "création d'une nav bar",
+      "description": "création d'une nav bar avec un menu déroulant",
+      "temps": "10 heures",
+      "dateDebut": 20220612,
+      "dateFin": 20220710,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 4,
+      "user_id": [3]
+    },
+    {
+      "id": 14,
+      "nom": "création d'une page login",
+      "description": "créer une page login",
+      "temps": "1 heure",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 1,
+      "documents": [],
+      "projet_id": 4,
+      "user_id": [3]
+    },
+    {
+      "id": 15,
+      "nom": "création d'un background dynamique",
+      "description": "créer un background dynamique qui intéragit avec la souris",
+      "temps": "10 heures",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 1,
+      "documents": [],
+      "projet_id": 4,
+      "user_id": [3]
+    },
+    {
+      "id": 16,
+      "nom": "A/B testing",
+      "description": "création de plusieurs variantes du projets",
+      "temps": "4 heures",
+      "dateDebut": 20220510,
+      "dateFin": 20220620,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 5,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 17,
+      "nom": "UI design",
+      "description": "création de plusieurs variantes du projets",
+      "temps": "3 heures",
+      "dateDebut": 20220510,
+      "dateFin": 20220620,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 5,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 18,
+      "nom": "UX",
+      "description": "Amélioration expérience utilisateurs",
+      "temps": "1 heure",
+      "dateDebut": 20220510,
+      "dateFin": 20220905,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 5,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 19,
+      "nom": "UX 2",
+      "description": "Amélioration expérience admins",
+      "temps": "10 heures",
+      "dateDebut": 20220510,
+      "dateFin": 20220620,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 5,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 20,
+      "nom": "UX/UI",
+      "description": "Amélioration du design et de l'experience",
+      "temps": "5 heures",
+      "dateDebut": 20220510,
+      "dateFin": 20220620,
+      "status_id": 2,
+      "documents": [],
+      "projet_id": 5,
+      "user_id": [1, 2, 3]
+    },
+    {
+      "id": 21,
+      "nom": "Application Redcross",
+      "description": "structuration",
+      "temps": "4 heures",
+      "dateDebut": 20220716,
+      "dateFin": 20220905,
+      "status_id": 3,
+      "documents": [],
+      "projet_id": 6,
+      "user_id": [1, 2, 3, 4]
+    }
+  ]
+}

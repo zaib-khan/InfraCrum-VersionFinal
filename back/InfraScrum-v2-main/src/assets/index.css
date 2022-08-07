@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  @apply px-3 py-1 rounded-full duration-200;
+}
+.btn.primary {
+  @apply bg-amber-400 text-white hover:bg-emerald-900 hover:drop-shadow;
+}
+.btn.cancel {
+  @apply bg-rose-600 text-white hover:bg-rose-900 hover:drop-shadow;
+}
+.btn.warning {
+  @apply bg-amber-600 text-white hover:bg-amber-900 hover:drop-shadow;
+}
+.btn:disabled {
+  @apply cursor-not-allowed bg-gray-300 hover:drop-shadow-none hover:bg-gray-300;
+}
+
+.title {
+  @apply my-3 relative block font-semibold before:block before:absolute before:-bottom-1 before:bg-emerald-600 before:duration-200 before:h-1 before:rounded before:w-0 before:hover:w-3/4;
+}
+.title.primary {
+  @apply text-3xl;
+}
+.title.secondary {
+  @apply text-xl;
+}
+
+.form-control {
+  @apply mt-4;
+}
+
+.form-control.input label {
+  @apply block text-sm font-medium text-gray-700;
+}
+.form-control.input input {
+  @apply mt-1 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+}
+.form-control.input input:disabled {
+  @apply bg-gray-300 text-gray-500;
+}
+
+.form-control.textarea label {
+  @apply block text-sm font-medium text-gray-700;
+}
+.form-control.textarea textarea {
+  @apply mt-1 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+}
+
+.form-control.textarea textarea:disabled {
+  @apply bg-gray-300 text-gray-500;
+}
+
+.form-control.select label {
+  @apply block text-sm font-medium text-gray-700;
+}
+.form-control.select select {
+  @apply mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm;
+}
+
+.form-control.checkbox {
+  @apply flex items-center;
+}
+.form-control.checkbox label {
+  @apply block text-sm font-medium text-gray-700 mr-3;
+}
+.form-control.checkbox input {
+  @apply focus:ring-emerald-500 h-4 w-4 text-emerald-600 border-gray-300 rounded;
+}
+
+.form-control.radio div {
+  @apply flex items-center mt-1;
+}
+.form-control.radio div label {
+  @apply block text-sm font-medium text-gray-700 mr-3;
+}
+.form-control.radio div input {
+  @apply focus:ring-emerald-500 h-4 w-4 text-emerald-600 border-gray-300 rounded-full;
+}
+
+.blue-text {
+  color: #1476bb;
+}
+
+/* Version mobile*/
+
+.persoh {
+  height: 12vh;
+}
+
+.sidebar-taches {
+  height: 100%;
+  width: 7%;
+}
+nav {
+  height: 12vh;
+}
+.customHeight {
+  height: 88vh;
+}
+
+@media only screen and (max-width: 1025px) {
+  .sidebar-taches {
+    height: 28%;
+    width: inherit;
+    flex-direction: row;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    position: unset;
+  }
+  .sidebar-taches img {
+    padding: 0;
+    margin: 8px 8px 8px 8px;
+  }
+
+  .divPrincipal {
+    margin-left: 0;
+  }
+  .divTache {
+    flex-direction: column;
+    border-right: 4px solid #1476bb;
+    border-bottom: none;
+  }
+  .persoabso {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    color: rgb(2 132 199);
+    margin-bottom: 60px;
+  }
+  .animWelcome {
+    animation-name: slide-bottom;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(25px);
+      transform: translateY(25px);
+    }
+  }
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* version desktop / ipad */
+@media only screen and (min-width: 1025px) {
+  .persoh {
+    height: 88vh;
+  }
+  .persoabso {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 25vh;
+    right: -19vh;
+    color: white;
+  }
+  .animWelcome {
+    animation-name: slide-bottom2;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+  @keyframes slide-bottom2 {
+    0% {
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(25px);
+      transform: translateY(25px);
+    }
+  }
+  .persot {
+    height: 88vh;
+  }
+
+  .toastStyle {
+    @apply cursor-pointer font-semibold;
+    background-color: rgb(79 70 229) !important;
+    color: white !important;
+  }
+  .successToast {
+    background-color: rgb(74 222 128) !important;
+    color: white !important;
+  }
+  .errorToast {
+    background-color: rgb(248 113 113) !important;
+    color: white !important;
+  }
+}
